@@ -9,16 +9,15 @@ st.write(
   out our easy-to-follow guides at
   [docs.streamlit.io](https://docs.streamlit.io).
   """)
-st.write(st.secrests["snowflake"])
 #option = st.selectbox(t
  #   "What is your favorite fruit?",
   #  ("Banana", "Strawberries", "peaches"),
 #)
 #st.write("Favorite fruit is :", option)
 
-
-#cnx=st.connection("snowflake",type="snowflake")
-#session = cnx.session()
+st.write(st.secrests["snowflake"])
+cnx=st.connection("snowflake",type="snowflake")
+session = cnx.session()
 
 name_on_order=st.text_input("Name on Smoothie: ")
 st.write("name on you smoothie is : ",name_on_order )
