@@ -10,7 +10,7 @@ st.write(
   out our easy-to-follow guides at
   [docs.streamlit.io](https://docs.streamlit.io).
   """)
-
+st.write(st.secrests["snowflake"])
 #option = st.selectbox(t
  #   "What is your favorite fruit?",
   #  ("Banana", "Strawberries", "peaches"),
