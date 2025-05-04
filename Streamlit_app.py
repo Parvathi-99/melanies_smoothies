@@ -15,7 +15,7 @@ st.write(
 #)
 #st.write("Favorite fruit is :", option)
 
-st.write(st.secrests["snowflake"])
+#st.write(st.secrests["snowflake"])
 cnx=st.connection("snowflake",type="snowflake")
 session = cnx.session()
 
