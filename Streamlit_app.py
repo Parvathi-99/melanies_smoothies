@@ -17,8 +17,8 @@ st.write(st.secrests["snowflake"])
 #st.write("Favorite fruit is :", option)
 
 
-cnx=st.connection("snowflake",type="snowflake")
-session = cnx.session()
+#cnx=st.connection("snowflake",type="snowflake")
+#session = cnx.session()
 
 name_on_order=st.text_input("Name on Smoothie: ")
 st.write("name on you smoothie is : ",name_on_order )
