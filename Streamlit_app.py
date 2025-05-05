@@ -24,7 +24,8 @@ session = cnx.session()
 name_on_order=st.text_input("Name on Smoothie: ")
 st.write("name on you smoothie is : ",name_on_order )
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'),col('SEARCH_ON'))
-#st.dataframe(data=my_dataframe, use_container_width=True)
+st.dataframe(data=my_dataframe, use_container_width=True)
+st.stop()
 ingredients_list=st.multiselect("Choose upto 5 ingredients :",my_dataframe,max_selections=5)
 ingredients_string=''
 if ingredients_list:
